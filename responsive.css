@@ -69,6 +69,9 @@
 
 /* スマホ向けレイアウト */
 @media all and (max-width: 766px) {
+  h2 {
+    font-size: 25px;
+  }
   .skill {
     width: 100%;
     height: 330px;
