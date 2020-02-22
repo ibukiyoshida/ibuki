@@ -194,7 +194,7 @@ a {
     width:100%;
     height: 420px;
     padding: 180px 0px 100px 0px;
-    background-image: url(https://www.stargaze.co.jp/location/northrim.jpg);
+    background-color: #24608c;
     background-size: cover;
     text-align: center;
 }
@@ -253,7 +253,7 @@ p {
   text-align: center;
 }
 .background-a {
-  background-image: url(https://cdn-ak.f.st-hatena.com/images/fotolife/s/samada/20191012/20191012191936.jpg);
+  background-color: #24608c;
   background-size: cover;
   background-attachment: fixed;
 }
@@ -385,7 +385,7 @@ transform: scale(1.05);
     width: 100%;
     padding-top: 100px;
     text-align: center;
-    background-image: url(https://i.gzn.jp/img/2014/03/08/yosemite-hd-2/01.jpg);
+    background-color: #24608c;
     background-size: cover;
     background-attachment: fixed;
 }
