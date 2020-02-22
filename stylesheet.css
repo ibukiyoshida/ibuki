@@ -2,6 +2,54 @@
   margin: 0px;
   padding: 0px;
 }
+
+.center-outer {
+  display: table;
+  width: 100%;
+  height: 100%;
+}
+    
+.center-inner {
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+}
+    
+/* Essential CSS - Makes the effect work */
+    
+body {
+  background-color: #3498db;
+}
+    
+.bubbles {
+  display: inline-block;
+  font-family: arial;
+  position: relative;
+}
+    
+.bubbles h2 {
+  position: relative;
+  margin: 1em 0 0;
+  font-family: 'Luckiest Guy', cursive;
+  color: #fff;
+  z-index: 2;
+  font-size: 35px; 
+  color: rgb(255, 255, 255);
+  padding-top: 170px;
+  letter-spacing: 5px;
+  font-family: serif;
+}
+    
+.individual-bubble {
+  position: absolute;
+  border-radius: 100%;
+  bottom: 10px;
+  background-color: #fff;
+  z-index: 1;
+}
+
+
+
 .fade_off {
   opacity: 0;
   -webkit-transition: all 1.5s;
@@ -198,13 +246,7 @@ a {
     background-size: cover;
     text-align: center;
 }
-h2 {
-  font-size: 35px; 
-  color: rgb(255, 255, 255);
-  padding-top: 170px;
-  letter-spacing: 5px;
-  font-family: serif;
-}
+
 .profile-wrapper {
   height: 430px;
   text-align: center;
