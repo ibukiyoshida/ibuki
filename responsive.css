@@ -69,6 +69,9 @@
 
 /* スマホ向けレイアウト */
 @media all and (max-width: 766px) {
+  .top-wrapper {
+    height: 500px;
+  }
   h2 {
     font-size: 23px;
   }
