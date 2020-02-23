@@ -3,6 +3,76 @@
   padding: 0px;
 }
 
+
+  /*ローディング部分の回転エフェクト定義*/
+  @-moz-keyframes loading {
+    from {
+      -webkit-transform: rotate(0deg);
+      transform: rotate(0deg); }
+    to {
+      -webkit-transform: rotate(360deg);
+      transform: rotate(360deg); } }
+  @-webkit-keyframes loading {
+    from {
+      -webkit-transform: rotate(0deg);
+      transform: rotate(0deg); }
+    to {
+      -webkit-transform: rotate(360deg);
+      transform: rotate(360deg); } }
+  @keyframes loading {
+    from {
+      -webkit-transform: rotate(0deg);
+      transform: rotate(0deg); }
+    to {
+      -webkit-transform: rotate(360deg);
+      transform: rotate(360deg); } }
+  
+  /*ローディング画面の背景部分*/
+  #loading {
+    width: 100vw;
+    height: 100vh;
+    background-color: #3498db;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100; }
+  
+  /*ローディング回転部分*/
+  #loading-main:after, #loading-main:before {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 100%;
+    margin-left: -50%;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    border-radius: 110%; }
+  
+  #loading-main {
+    display: block;
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    z-index: 105; }
+    #loading-main:after {
+      -moz-animation: loading 0.75s linear infinite;
+      -webkit-animation: loading 0.75s linear infinite;
+      animation: loading 0.75s linear infinite;
+      border: 3px solid transparent;
+      border-top-color: rgb(255, 255, 255); }
+    #loading-main:before {
+      border: 3px solid rgba(37, 37, 37, 0.15); }
+
+
+
+
 .center-outer {
   display: table;
   width: 100%;
