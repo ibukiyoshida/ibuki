@@ -25,8 +25,10 @@ $(function() {
             }
         });
     });
-    
-        // Created for an Articles on:
+　　　
+
+
+    // Created for an Articles on:
 // https://www.html5andbeyond.com/bubbling-text-effect-no-canvas-required/
 
 jQuery(document).ready(function($){
@@ -68,11 +70,10 @@ jQuery(document).ready(function($){
  
  
     }, 350);
- 
 });
-    
-    
-   // 背景画像を含むすべての画像が正確に読み込みこめたら実行
+
+
+// 背景画像を含むすべての画像が正確に読み込みこめたら実行
 $('.wrapper').imagesLoaded( { background: true }, function() {
     Loadingfade();
 });
@@ -89,4 +90,5 @@ $('#loading-main').fadeOut(1000, function(){
 $('#loading').fadeOut(800);
 });
 }
+
 });
