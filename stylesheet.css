@@ -190,7 +190,7 @@
     /*ハンバーガーの形をCSSで表現*/
     #nav-open span, #nav-open span:before, #nav-open span:after {
       position: absolute;
-      height: 3px;/*線の太さ*/
+      height: 4px;/*線の太さ*/
       width: 25px;/*長さ*/
       border-radius: 3px;
       background: rgb(255, 255, 255);
