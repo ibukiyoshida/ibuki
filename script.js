@@ -86,7 +86,7 @@ setTimeout(Loadingfade, 5000);
 //ローディング非表示処理
 function Loadingfade(){
 // 1秒かけてローディング部分を非表示にし、その後0.8秒かけて背景を非表示
-$('#loading-main').fadeOut(1000, function(){
+$('#loading-main').fadeOut(3000, function(){
 $('#loading').fadeOut(800);
 });
 }
