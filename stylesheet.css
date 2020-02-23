@@ -1,7 +1,8 @@
 * {
-  margin: 0px;
-  padding: 0px;
-}
+    margin: 0px;
+    padding: 0px;
+  }
+
 
 
   /*ローディング部分の回転エフェクト定義*/
@@ -71,455 +72,453 @@
       border: 3px solid rgba(37, 37, 37, 0.15); }
 
 
-
-
-.center-outer {
-  display: table;
-  width: 100%;
-  height: 100%;
-}
-    
-.center-inner {
-  display: table-cell;
-  vertical-align: middle;
-  text-align: center;
-}
-    
-/* Essential CSS - Makes the effect work */
-    
-body {
-  background-color: #3498db;
-}
-    
-.bubbles {
-  display: inline-block;
-  font-family: arial;
-  position: relative;
-}
-    
-.bubbles h2 {
-  position: relative;
-  margin: 1em 0 0;
-  font-family: 'Luckiest Guy', cursive;
-  color: #fff;
-  z-index: 2;
-  font-size: 35px; 
-  color: rgb(255, 255, 255);
-  padding-top: 170px;
-  letter-spacing: 5px;
-  font-family: serif;
-}
-    
-.individual-bubble {
-  position: absolute;
-  border-radius: 100%;
-  bottom: 10px;
-  background-color: #fff;
-  z-index: 1;
-}
-
-
-
-.fade_off {
-  opacity: 0;
-  -webkit-transition: all 1.5s;
-  -moz-transition: all 1.5s;
-  -o-transition: all 1.5s;
-  -ms-transition: all 1.5s;
-  transition: all 1.5s;
-}
-.fade_on {
-  opacity:1;
-}
-.clear {            
-  clear: left;            
-}  
-header {
-  background-color: #24608c;
-  opacity: 1;
-  width: 100%;
-  height: 70px;
-  top: 0;
-  position: fixed;
-  z-index: 10;
-  width: 100%;
-  color: white;
-  font-family: Tahoma;
-}
-.container {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 15px;
-}
-h1 {
-  padding-top: 12px;
-  padding-left: 20px;
-}
-.header-left {
-  float: left;
-  cursor: pointer;
-}
-.header-right {
-  float: right;
-  padding-top: 20px;
-  padding-right: 30px;
-}
-
-.right {
-  padding-right: 40px;
-  padding-left: 30px;
-}
-
-/*ここからハンバーガーメニュー*/
-#nav-drawer {
-    position: relative;
-  }
-  
-  /*チェックボックス等は非表示に*/
-  .nav-unshown {
-    display:none;
-  }
-  
-  /*アイコンのスペース*/
-  #nav-open {
-    display: inline-block;
-    width: 30px;
-    height: 22px;
-    vertical-align: middle;
-  }
-  
-  /*ハンバーガーの形をCSSで表現*/
-  #nav-open span, #nav-open span:before, #nav-open span:after {
-    position: absolute;
-    height: 3px;/*線の太さ*/
-    width: 25px;/*長さ*/
-    border-radius: 3px;
-    background: rgb(255, 255, 255);
-    display: block;
-    content: '';
-    cursor: pointer;
-  }
-  #nav-open span:before {
-    bottom: -8px;
-  }
-  #nav-open span:after {
-    bottom: -16px;
-  }
-  
-  /*閉じる用の薄黒箇所*/
-  #nav-close {
-    display: none;
-    position: fixed;
-    z-index: 99;
-    top: 0;
-    left: 0;
+  .center-outer {
+    display: table;
     width: 100%;
     height: 100%;
-    background: rgb(0, 0, 0);
-    opacity: 0;
-    transition: .3s ease-in-out;
   }
-  
-  /*メニューの中身*/
-  #nav-content {
-    overflow: auto;
-    padding-top: 30px;
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: 9999;
-    width: 90%;
-    max-width: 165px;/*最大幅（お好みで調整を）*/
-    height: 50%;
-    background: #24608c;
-    transition: .3s ease-in-out;
-    -webkit-transform: translateX(-105%);
-    transform: translateX(-105%);
-    border-radius: 5px;
-  }
-  
-  /*チェックがついたら表示させる*/
-  #nav-input:checked ~ #nav-close {
-    display: block;
-    opacity: .5;
-  }
-  
-  #nav-input:checked ~ #nav-content {
-    -webkit-transform: translateX(0%);
-    transform: translateX(0%);
-    box-shadow: 6px 0 25px rgba(0, 0, 0, 0.315);
-  }
-  
-  .header-logo-menu{
-      display: flex;
-      display: -moz-flex;
-      display: -o-flex;
-      display: -webkit-flex;
-      display: -ms-flex;
-      flex-direction: row;
-      -moz-flex-direction: row;
-      -o-flex-direction: row;
-      -webkit-flex-direction: row;
-      -ms-flex-direction: row;
-      float: right;
-      padding-top: 20px
-  }
-  
-  /*ロゴやサイトタイトルをセンタリング*/
-  .logo-erea{text-align:center;margin:auto;}
-
-  /*menu欄*/
-  .line {
-    padding-bottom: 10px;
-    border-bottom: 1px solid rgb(255, 255, 255);
-    width: 100%;
-  }
-  /*ハンバーガーメニュー終了*/
-
-  /*ボタン下線*/
-
-li {
-  padding-bottom: 20px;
-}
-a {
-    position: relative;
-    display: inline-block;
-    transition: .3s;
-    color: white;
-    text-decoration: none; 
-    font-size: 23px;
-    padding-right: 30px;
-    padding-left: 30px;
-  }
-  .a::after {
-    position: absolute;
-    bottom: 0;
-    left: 50%;
-    content: '';
-    width: 0;
-    height: 2px;
-    background-color: #ffffff;
-    transition: .3s;
-    -webkit-transform: translateX(-50%);
-    transform: translateX(-50%);
-  }
-  .a:hover::after {
-    width: 100%;
-  }
-
-.top-wrapper {
-    background-attachment: fixed;
-    width:100%;
-    height: 470px;
-    padding: 180px 0px 100px 0px;
-    background-color: #24608c;
-    background-size: cover;
+      
+  .center-inner {
+    display: table-cell;
+    vertical-align: middle;
     text-align: center;
-}
-
-.profile-wrapper {
-  height: 430px;
-  text-align: center;
-  padding-top: 100px;
-  background-color: rgb(46, 46, 46);
-  border-top: 2px solid rgb(221, 221, 221);
-  border-bottom: 2px solid rgb(221, 221, 221);
-  box-shadow: 0 0 ６px 1.5px #9b9b9b;
-}
-.fas {
-  padding-top: 70px;
-  font-size: 150px;
-  color: #2095e9;
-  float: left;
-  margin-left: 28%;
-}
-
-h3 {
-  color: #ffffff;
-  padding-bottom: 10px;
-  font-family: 'Georgia';
-  font-size: 40px;
-  text-align: center;
-}
-h5 {
+  }
+      
+  /* Essential CSS - Makes the effect work */
+      
+  body {
+    background-color: #3498db;
+  }
+      
+  .bubbles {
+    display: inline-block;
+    font-family: arial;
+    position: relative;
+  }
+      
+  .bubbles h2 {
+    position: relative;
+    margin: 1em 0 0;
+    font-family: 'Luckiest Guy', cursive;
+    color: #fff;
+    z-index: 2;
+    font-size: 35px; 
     color: rgb(255, 255, 255);
-    font-size: 19px;
-    padding-top: 75px;
-    padding-right: 17%;
-    font-weight: normal;
-    letter-spacing: 3px;
-    line-height: 35px;
-}
-p {
-  color: rgb(255, 255, 255);
-  font-size: 16px;
-  line-height: 30px;
-  padding-top: 25px;
-  font-weight: bold;
-}
-.skills-wrapper {
-  text-align: center;
-  padding-top: 120px;
-  padding-left: 10%;
-  padding-right: 10%;
-  height: 590px;
-  text-align: center;
-}
-.background-a {
-  background-color: #24608c;
-  background-size: cover;
-  background-attachment: fixed;
-}
-.fa-css3-alt,.fa-html5,.fa-js-square {
-  font-size: 50px;
-  padding-top: 40px;
-  color: #ffb20b;
-}
-h4 {
-  font-size: 29px;
-  color: rgb(255, 255, 255);
-  padding-top: 20px;
-}
-.css {
-  margin-right: 1%;
-  margin-left: 1%;
-}
-.skill {
-  float: left;
-  width: 32%;
-  margin-top: 120px;
-  height: 310px;
-  border-radius: 5px;
-  border-top: 1px solid rgb(221, 221, 221);
-  border-bottom: 1px solid rgb(221, 221, 221);
-  border-right: 1px solid rgb(221, 221, 221);
-  border-left: 1px solid rgb(221, 221, 221);
-  box-shadow: 0 0 5px 1.5px #afafaf;
-  transition: all 0.6s ease 0s;
-  background-color: rgb(46, 46, 46);
-}
-.skill:hover {
-transform: scale(1.05);
-}
-.service-wrapper {
-  height: 600px;
-  padding-top: 100px;
-  background-color: rgb(46, 46, 46);
-  border-top: 2px solid rgb(221, 221, 221);
-  border-bottom: 2px solid rgb(221, 221, 221);
-  box-shadow: 0 0 ６px 1.5px #9b9b9b;
-}
-/*memo-code*/
-.huifont{
-    font-weight: bold;
+    padding-top: 170px;
     letter-spacing: 5px;
     font-family: serif;
-    font-size: 20px;
-}
-.memox{
-    position:relative;
-    background:#fffde7;
-    width:60%;
-    margin:2em auto;
-    padding:1.5em 1em;
-    transform: rotate(-2deg);
-    box-shadow:1px 1px 4px rgba(0,0,0,0.2);
-    color:#6d6d6d;
-    border-radius: 3px;
-    margin-top: 60px;
-}
-.memox::before{
-    position:relative;
-    display:inline-block;
-    border-bottom:3px solid #6b6b6b;
-    border-radius: 0 0 40% 5% / 0 0 15% 20%;
-    padding:0 1em 0.1em 0.2em;
-    font-size:110%;
-    font-weight:bold;
-    transform: rotate(-5deg);
-}
-.memox::after{
-    content:'';
-    position:absolute;
-    left:50%;
-    top:-15px;
-    margin-left:-75px;
-    width:170px;
-    height:30px;
-    background:rgba(245,245,245,0.7);
-    box-shadow:1px 1px 4px rgba(0,0,0,0.2);
-    transform: rotate(-4deg);
-}
-.memox ul{
-    margin:1em 0.5em 0 2em;
-    padding:0 0 0 0;
-}
-.memox ul li{
-    margin-bottom:0.5em;
-}
-
-/*clipbox*/
-.clip-box-a {
-    position: relative;
-    margin: 0 auto;
-    padding: 15px 35px 15px 25px;
-    width: 40%; /* ボックス幅 */
-    background-color: #fff; /* ボックス背景色 */
-    color: #555555; /* 文章色 */
-    border: 2px solid rgb(143, 143, 143); /* 枠線 */
-    box-shadow: 1px 1px 1px rgb(143, 143, 143); /* 影の色 */
-    border-radius: 4px;
-}
-.contact-wrapper {
-    height: 630px;
+  }
+      
+  .individual-bubble {
+    position: absolute;
+    border-radius: 100%;
+    bottom: 10px;
+    background-color: #fff;
+    z-index: 1;
+  }
+  
+  
+  
+  .fade_off {
+    opacity: 0;
+    -webkit-transition: all 1.5s;
+    -moz-transition: all 1.5s;
+    -o-transition: all 1.5s;
+    -ms-transition: all 1.5s;
+    transition: all 1.5s;
+  }
+  .fade_on {
+    opacity:1;
+  }
+  .clear {            
+    clear: left;            
+  }  
+  header {
+    background-color: #24608c;
+    opacity: 1;
     width: 100%;
-    padding-top: 100px;
+    height: 70px;
+    top: 0;
+    position: fixed;
+    z-index: 10;
+    width: 100%;
+    color: white;
+    font-family: Tahoma;
+  }
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+  }
+  h1 {
+    padding-top: 12px;
+    padding-left: 20px;
+  }
+  .header-left {
+    float: left;
+    cursor: pointer;
+  }
+  .header-right {
+    float: right;
+    padding-top: 20px;
+    padding-right: 30px;
+  }
+  
+  .right {
+    padding-right: 40px;
+    padding-left: 30px;
+  }
+  
+  /*ここからハンバーガーメニュー*/
+  #nav-drawer {
+      position: relative;
+    }
+    
+    /*チェックボックス等は非表示に*/
+    .nav-unshown {
+      display:none;
+    }
+    
+    /*アイコンのスペース*/
+    #nav-open {
+      display: inline-block;
+      width: 30px;
+      height: 22px;
+      vertical-align: middle;
+    }
+    
+    /*ハンバーガーの形をCSSで表現*/
+    #nav-open span, #nav-open span:before, #nav-open span:after {
+      position: absolute;
+      height: 3px;/*線の太さ*/
+      width: 25px;/*長さ*/
+      border-radius: 3px;
+      background: rgb(255, 255, 255);
+      display: block;
+      content: '';
+      cursor: pointer;
+    }
+    #nav-open span:before {
+      bottom: -8px;
+    }
+    #nav-open span:after {
+      bottom: -16px;
+    }
+    
+    /*閉じる用の薄黒箇所*/
+    #nav-close {
+      display: none;
+      position: fixed;
+      z-index: 99;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgb(0, 0, 0);
+      opacity: 0;
+      transition: .3s ease-in-out;
+    }
+    
+    /*メニューの中身*/
+    #nav-content {
+      overflow: auto;
+      padding-top: 30px;
+      position: fixed;
+      top: 0;
+      left: 0;
+      z-index: 9999;
+      width: 90%;
+      max-width: 165px;/*最大幅（お好みで調整を）*/
+      height: 50%;
+      background: #24608c;
+      transition: .3s ease-in-out;
+      -webkit-transform: translateX(-105%);
+      transform: translateX(-105%);
+      border-radius: 5px;
+    }
+    
+    /*チェックがついたら表示させる*/
+    #nav-input:checked ~ #nav-close {
+      display: block;
+      opacity: .5;
+    }
+    
+    #nav-input:checked ~ #nav-content {
+      -webkit-transform: translateX(0%);
+      transform: translateX(0%);
+      box-shadow: 6px 0 25px rgba(0, 0, 0, 0.315);
+    }
+    
+    .header-logo-menu{
+        display: flex;
+        display: -moz-flex;
+        display: -o-flex;
+        display: -webkit-flex;
+        display: -ms-flex;
+        flex-direction: row;
+        -moz-flex-direction: row;
+        -o-flex-direction: row;
+        -webkit-flex-direction: row;
+        -ms-flex-direction: row;
+        float: right;
+        padding-top: 20px
+    }
+    
+    /*ロゴやサイトタイトルをセンタリング*/
+    .logo-erea{text-align:center;margin:auto;}
+  
+    /*menu欄*/
+    .line {
+      padding-bottom: 10px;
+      border-bottom: 1px solid rgb(255, 255, 255);
+      width: 100%;
+    }
+    /*ハンバーガーメニュー終了*/
+  
+    /*ボタン下線*/
+  
+  li {
+    padding-bottom: 20px;
+  }
+  a {
+      position: relative;
+      display: inline-block;
+      transition: .3s;
+      color: white;
+      text-decoration: none; 
+      font-size: 23px;
+      padding-right: 30px;
+      padding-left: 30px;
+    }
+    .a::after {
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      content: '';
+      width: 0;
+      height: 2px;
+      background-color: #ffffff;
+      transition: .3s;
+      -webkit-transform: translateX(-50%);
+      transform: translateX(-50%);
+    }
+    .a:hover::after {
+      width: 100%;
+    }
+  
+  .top-wrapper {
+      background-attachment: fixed;
+      width:100%;
+      height: 470px;
+      padding: 180px 0px 100px 0px;
+      background-color: #24608c;
+      background-size: cover;
+      text-align: center;
+  }
+  
+  .profile-wrapper {
+    height: 430px;
     text-align: center;
+    padding-top: 100px;
+    background-color: rgb(46, 46, 46);
+    border-top: 2px solid rgb(221, 221, 221);
+    border-bottom: 2px solid rgb(221, 221, 221);
+    box-shadow: 0 0 ６px 1.5px #9b9b9b;
+  }
+  .fas {
+    padding-top: 70px;
+    font-size: 150px;
+    color: #2095e9;
+    float: left;
+    margin-left: 28%;
+  }
+  
+  h3 {
+    color: #ffffff;
+    padding-bottom: 10px;
+    font-family: 'Georgia';
+    font-size: 40px;
+    text-align: center;
+  }
+  h5 {
+      color: rgb(255, 255, 255);
+      font-size: 19px;
+      padding-top: 75px;
+      padding-right: 17%;
+      font-weight: normal;
+      letter-spacing: 3px;
+      line-height: 35px;
+  }
+  p {
+    color: rgb(255, 255, 255);
+    font-size: 16px;
+    line-height: 30px;
+    padding-top: 25px;
+    font-weight: bold;
+  }
+  .skills-wrapper {
+    text-align: center;
+    padding-top: 120px;
+    padding-left: 10%;
+    padding-right: 10%;
+    height: 590px;
+    text-align: center;
+  }
+  .background-a {
     background-color: #24608c;
     background-size: cover;
     background-attachment: fixed;
-}
-.section-title {
-  font-weight: normal;
-  padding-top: 40px;
-  font-family: serif;
-  letter-spacing: 3px;
-}
-.fa-envelope {
-  font-size: 70px;
-  color: rgb(187, 56, 56);
-  padding-top: 40px;
-  padding-right: 0%;
-  padding-bottom: 20px;
-  transition: all 0.6s ease 0s;
-}
-.fa-envelope:hover {
-  transform: scale(1.1);
-}
-.fa-twitter-square {
-  color: rgb(79, 195, 241);
-  font-size: 70px; 
-  padding-top: 40px;
-  padding-left: 4%;
-  padding-bottom: 20px;
-  transition: all 0.6s ease 0s;
-}
-.fa-twitter-square:hover {
-  transform: scale(1.1);
-}
-.contact-a {
-  background-color: rgb(46, 46, 46);
-  color: white;
-  margin-top: 60px;
-  padding-left: 1%;
-  padding-left:1%;
-  margin-right: 25%;
-  margin-left: 25%;
-  width: 50%;
-  height: 430px;
-  border-top: 1px solid rgb(221, 221, 221);
-  border-bottom: 1px solid rgb(221, 221, 221);
-  border-right: 1px solid rgb(221, 221, 221);
-  border-left: 1px solid rgb(221, 221, 221);
-  box-shadow: 0 0 5px 1.5px #afafaf;
-}
+  }
+  .fa-css3-alt,.fa-html5,.fa-js-square {
+    font-size: 50px;
+    padding-top: 40px;
+    color: #ffb20b;
+  }
+  h4 {
+    font-size: 29px;
+    color: rgb(255, 255, 255);
+    padding-top: 20px;
+  }
+  .css {
+    margin-right: 1%;
+    margin-left: 1%;
+  }
+  .skill {
+    float: left;
+    width: 32%;
+    margin-top: 120px;
+    height: 310px;
+    border-radius: 5px;
+    border-top: 1px solid rgb(221, 221, 221);
+    border-bottom: 1px solid rgb(221, 221, 221);
+    border-right: 1px solid rgb(221, 221, 221);
+    border-left: 1px solid rgb(221, 221, 221);
+    box-shadow: 0 0 5px 1.5px #afafaf;
+    transition: all 0.6s ease 0s;
+    background-color: rgb(46, 46, 46);
+  }
+  .skill:hover {
+  transform: scale(1.05);
+  }
+  .service-wrapper {
+    height: 600px;
+    padding-top: 100px;
+    background-color: rgb(46, 46, 46);
+    border-top: 2px solid rgb(221, 221, 221);
+    border-bottom: 2px solid rgb(221, 221, 221);
+    box-shadow: 0 0 ６px 1.5px #9b9b9b;
+  }
+  /*memo-code*/
+  .huifont{
+      font-weight: bold;
+      letter-spacing: 5px;
+      font-family: serif;
+      font-size: 20px;
+  }
+  .memox{
+      position:relative;
+      background:#fffde7;
+      width:60%;
+      margin:2em auto;
+      padding:1.5em 1em;
+      transform: rotate(-2deg);
+      box-shadow:1px 1px 4px rgba(0,0,0,0.2);
+      color:#6d6d6d;
+      border-radius: 3px;
+      margin-top: 60px;
+  }
+  .memox::before{
+      position:relative;
+      display:inline-block;
+      border-bottom:3px solid #6b6b6b;
+      border-radius: 0 0 40% 5% / 0 0 15% 20%;
+      padding:0 1em 0.1em 0.2em;
+      font-size:110%;
+      font-weight:bold;
+      transform: rotate(-5deg);
+  }
+  .memox::after{
+      content:'';
+      position:absolute;
+      left:50%;
+      top:-15px;
+      margin-left:-75px;
+      width:170px;
+      height:30px;
+      background:rgba(245,245,245,0.7);
+      box-shadow:1px 1px 4px rgba(0,0,0,0.2);
+      transform: rotate(-4deg);
+  }
+  .memox ul{
+      margin:1em 0.5em 0 2em;
+      padding:0 0 0 0;
+  }
+  .memox ul li{
+      margin-bottom:0.5em;
+  }
+  
+  /*clipbox*/
+  .clip-box-a {
+      position: relative;
+      margin: 0 auto;
+      padding: 15px 35px 15px 25px;
+      width: 40%; /* ボックス幅 */
+      background-color: #fff; /* ボックス背景色 */
+      color: #555555; /* 文章色 */
+      border: 2px solid rgb(143, 143, 143); /* 枠線 */
+      box-shadow: 1px 1px 1px rgb(143, 143, 143); /* 影の色 */
+      border-radius: 4px;
+  }
+  .contact-wrapper {
+      height: 630px;
+      width: 100%;
+      padding-top: 100px;
+      text-align: center;
+      background-color: #24608c;
+      background-size: cover;
+      background-attachment: fixed;
+  }
+  .section-title {
+    font-weight: normal;
+    padding-top: 40px;
+    font-family: serif;
+    letter-spacing: 3px;
+  }
+  .fa-envelope {
+    font-size: 70px;
+    color: rgb(187, 56, 56);
+    padding-top: 40px;
+    padding-right: 0%;
+    padding-bottom: 20px;
+    transition: all 0.6s ease 0s;
+  }
+  .fa-envelope:hover {
+    transform: scale(1.1);
+  }
+  .fa-twitter-square {
+    color: rgb(79, 195, 241);
+    font-size: 70px; 
+    padding-top: 40px;
+    padding-left: 4%;
+    padding-bottom: 20px;
+    transition: all 0.6s ease 0s;
+  }
+  .fa-twitter-square:hover {
+    transform: scale(1.1);
+  }
+  .contact-a {
+    background-color: rgb(46, 46, 46);
+    color: white;
+    margin-top: 60px;
+    padding-left: 1%;
+    padding-left:1%;
+    margin-right: 25%;
+    margin-left: 25%;
+    width: 50%;
+    height: 430px;
+    border-top: 1px solid rgb(221, 221, 221);
+    border-bottom: 1px solid rgb(221, 221, 221);
+    border-right: 1px solid rgb(221, 221, 221);
+    border-left: 1px solid rgb(221, 221, 221);
+    box-shadow: 0 0 5px 1.5px #afafaf;
+  }
