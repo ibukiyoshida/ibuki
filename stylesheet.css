@@ -470,7 +470,7 @@
       border-radius: 4px;
   }
   .contact-wrapper {
-      height: 630px;
+      height: 600px;
       width: 100%;
       padding-top: 100px;
       text-align: center;
@@ -510,10 +510,10 @@
     margin-top: 60px;
     padding-left: 1%;
     padding-left:1%;
-    margin-right: 25%;
-    margin-left: 25%;
-    width: 50%;
-    height: 430px;
+    margin-right: 20%;
+    margin-left: 20%;
+    width: 60%;
+    height: 320px;
     border-top: 1px solid rgb(221, 221, 221);
     border-bottom: 1px solid rgb(221, 221, 221);
     border-right: 1px solid rgb(221, 221, 221);
